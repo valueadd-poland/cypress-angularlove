@@ -2,25 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-signin',
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss']
+  selector: 'app-signing',
+  templateUrl: './signing.component.html',
+  styleUrls: ['./signing.component.scss']
 })
-export class SigninComponent implements OnInit {
+export class SigningComponent implements OnInit {
 
-  signinForm!: FormGroup;
+  signingForm!: FormGroup;
   hidePassword!: boolean;
 
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    this.createSigninForm();
+    this.createSigningForm();
   }
 
   onSubmit(): void {}
 
-  private createSigninForm(): void {
-    this.signinForm = this.fb.group({
+  private createSigningForm(): void {
+    this.signingForm = this.fb.group({
       email: ['', [
         Validators.required,
         Validators.email
