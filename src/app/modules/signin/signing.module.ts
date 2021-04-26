@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { SigninRoutingModule } from './signin-routing.module';
+import { SigningRoutingModule } from './signing-routing.module';
 import { SigningComponent } from './signing.component';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -16,7 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   declarations: [SigningComponent],
   imports: [
     CommonModule,
-    SigninRoutingModule,
+    SigningRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
@@ -27,4 +27,4 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatFormFieldModule
   ]
 })
-export class SigninModule { }
+export class SigningModule { }
